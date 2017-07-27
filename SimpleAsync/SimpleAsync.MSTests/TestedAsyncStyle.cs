@@ -20,7 +20,6 @@ namespace SimpleAsync.MSTests
         {
             var EXPECTED = new []{ "Stuff", "Thingy", "Potato" };
             var result = await SomethingAsyncish.ReturnSomeStuff();
-
             
             var check = result.ToArray();
 

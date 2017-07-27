@@ -12,9 +12,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleAsync.MSTests", "Simp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleAsync.XUnit", "SimpleAsync.XUnit\SimpleAsync.XUnit.csproj", "{02E80909-ED65-4515-8622-C03FC7C97068}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAsync", "SimpleAsync\SimpleAsync.csproj", "{4F140807-05B3-4F2F-B113-D8DC7F724959}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAsync.NUnit", "SimpleAsync.NUnit\SimpleAsync.NUnit.csproj", "{1A24AFD8-323F-4286-860B-D6D78FAD67A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleAsync", "SimpleAsync\SimpleAsync.csproj", "{4F140807-05B3-4F2F-B113-D8DC7F724959}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,10 +32,6 @@ Global
 		{4F140807-05B3-4F2F-B113-D8DC7F724959}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F140807-05B3-4F2F-B113-D8DC7F724959}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F140807-05B3-4F2F-B113-D8DC7F724959}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1A24AFD8-323F-4286-860B-D6D78FAD67A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A24AFD8-323F-4286-860B-D6D78FAD67A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1A24AFD8-323F-4286-860B-D6D78FAD67A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1A24AFD8-323F-4286-860B-D6D78FAD67A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

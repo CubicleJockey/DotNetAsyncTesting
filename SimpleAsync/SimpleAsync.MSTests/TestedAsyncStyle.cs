@@ -11,7 +11,10 @@ namespace SimpleAsync.MSTests
         [TestMethod]
         public async Task ThisWillFailTests()
         {
-            await Assert.ThrowsExceptionAsync<Exception>(async () => { await SomethingAsyncish.ThisWillFail(); });
+            var exception = await Assert.ThrowsExceptionAsync<Exception>(async () => { await SomethingAsyncish.ThisWillFail(); });
+
+            Assert.IsInstanceOfType(exception, typeof(Exception));
+            Assert.AreEqual("Failed after 5 seconds.", exception.Message);
         }
 
         [TestMethod]

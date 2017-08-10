@@ -9,10 +9,9 @@ namespace SimpleAsync.MSTests
     public class TestedAsyncStyle
     {
         [TestMethod]
-        [ExpectedException(typeof(Exception))]
         public async Task ThisWillFailTests()
         {
-            await SomethingAsyncish.ThisWillFail();
+            await Assert.ThrowsExceptionAsync<Exception>(async () => { await SomethingAsyncish.ThisWillFail(); });
         }
 
         [TestMethod]
@@ -20,7 +19,7 @@ namespace SimpleAsync.MSTests
         {
             var EXPECTED = new []{ "Stuff", "Thingy", "Potato" };
             var result = await SomethingAsyncish.ReturnSomeStuff();
-            
+
             var check = result.ToArray();
 
             Assert.AreEqual(3, check.Length);
